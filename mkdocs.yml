@@ -1,0 +1,71 @@
+site_name: Docker 101 Workshop
+site_description: Learn to build, test, and deploy containerized applications
+site_author: Collabnix
+repo_url: https://github.com/collabnix/docker-101-workshop
+repo_name: collabnix/docker-101-workshop
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+    - toc.follow
+  palette:
+    primary: blue
+    accent: indigo
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/images/docker-logo.png
+  favicon: assets/images/docker-favicon.png
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+nav:
+  - Home: index.md
+  - Workshop Agenda: agenda.md
+  - 1. Build:
+    - Overview: build/index.md
+    - Backend Containerization: build/backend.md
+    - Frontend Containerization: build/frontend.md
+    - Dockerfiles & Compose: build/dockerfiles.md
+  - 2. Test:
+    - Overview: test/index.md
+    - Running the Application: test/running.md
+    - Troubleshooting: test/troubleshooting.md
+    - Testing: test/testing.md
+  - 3. Deploy:
+    - Overview: deploy/index.md
+    - Docker Compose: deploy/docker-compose.md
+    - Kubernetes: deploy/kubernetes.md
+  - 4. CDE (Container Development Environment):
+    - Overview: cde/index.md
+    - Setup & Usage: cde/setup.md
+  - Resources:
+    - Docker Commands: resources/docker-commands.md
+    - Docker Compose Reference: resources/docker-compose-reference.md
+    - Kubernetes Reference: resources/kubernetes-reference.md
