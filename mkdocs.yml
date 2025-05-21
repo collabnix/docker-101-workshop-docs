@@ -6,20 +6,15 @@ repo_name: collabnix/docker-101-workshop
 
 theme:
   name: material
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.sections
-    - navigation.indexes
-    - navigation.expand
-    - toc.follow
+  language: en
   palette:
     primary: blue
-    accent: indigo
-  icon:
-    repo: fontawesome/brands/github
-  logo: assets/images/docker-logo.png
-  favicon: assets/images/docker-favicon.png
+    accent: blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo: 'images/docker-logo-white.svg'
 
 markdown_extensions:
   - pymdownx.highlight:
